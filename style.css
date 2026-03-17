@@ -1,0 +1,39 @@
+/* 전체 배경색과 폰트 설정 */
+body {
+  background-color: #f9f9f9;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #333333;
+}
+
+/* 제목 색상 */
+h1 {
+  color: #2d6a4f;
+  font-size: 28px;
+}
+
+h2 {
+  color: #2d6a4f;
+  font-size: 20px;
+}
+
+/* 이미지 크기 */
+img {
+  width: 120px;
+}
+
+/* 소개글 */
+p {
+  font-size: 15px;
+}
+
+/* 목록 */
+li {
+  font-size: 15px;
+}
+
+/* 버튼 */
+button {
+  background-color: #a8d8ea;
+  color: white;
+  font-size: 15px;
+}
