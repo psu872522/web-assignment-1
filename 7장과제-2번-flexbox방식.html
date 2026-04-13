@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>7장 연습문제 2번 (3)-Flexbox 방식</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      width: 1080px;
+      margin: 0 auto;
+      margin-bottom: 8px;
+    }
+
+    .container.gnb-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .container.main-wrap {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    ul.gnb {
+      display: flex;
+      padding: 8px 0;
+      list-style-type: none;
+      background-color: #6b8f5e;
+    }
+
+    ul.gnb li {
+      list-style-type: none;
+      padding-left: 16px;
+      font-size: 14px;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    ul.gnb li:first-child {
+      padding-left: 0;
+    }
+
+    ul.rank {
+      padding: 8px 0;
+      list-style-type: none;
+      background-color: #f5e97a;
+    }
+
+    ul.rank li {
+      list-style-type: none;
+      padding: 0 12px;
+      font-size: 14px;
+      color: #7a6000;
+      font-weight: bold;
+    }
+
+    .left {
+      width: 740px;
+      height: 428px;
+      background-color: #f4b8c8;
+    }
+
+    .right {
+      width: 332px;
+      height: 428px;
+      background-color: #b8c8f4;
+    }
+
+    .footer {
+      height: 80px;
+      background-color: #f5e97a;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Logo</h1>
+  </div>
+
+  <div class="container gnb-wrap">
+    <ul class="gnb">
+      <li>메일</li>
+      <li>카페</li>
+      <li>블로그</li>
+      <li>쇼핑</li>
+      <li>사전</li>
+      <li>뉴스</li>
+      <li>증권</li>
+      <li>부동산</li>
+      <li>지도</li>
+    </ul>
+    <ul class="rank">
+      <li>실시간 검색 순위</li>
+    </ul>
+  </div>
+
+  <div class="container main-wrap">
+    <div class="left"></div>
+    <div class="right"></div>
+  </div>
+
+  <div class="container main-wrap">
+    <div class="left"></div>
+    <div class="right"></div>
+  </div>
+
+  <div class="container">
+    <div class="footer"></div>
+  </div>
+
+</body>
+</html>
