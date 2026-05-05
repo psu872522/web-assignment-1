@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>17번</title>
+</head>
+<body>
+    <script>
+        let r = prompt("원기둥 밑면의 반지름을 입력하세요", "0");
+        let h = prompt("원기둥의 높이를 입력하세요", "0");
+        r = parseFloat(r);
+        h = parseFloat(h);
+
+        let pi = 3.14159;
+        let volume = r * r * pi * h;
+
+        document.write("반지름 " + r + ", 높이 " + h + "인 원기둥의 부피 = " + volume.toFixed(2));
+    </script>
+</body>
+</html>

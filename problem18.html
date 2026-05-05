@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>18번</title>
+</head>
+<body>
+    <script>
+        let input = prompt("네 자리 정수를 입력하세요", "입력");
+        let num = parseInt(input);
+
+        let thousand = parseInt(num / 1000);
+        let hundred = parseInt(num % 1000 / 100);
+        let ten = parseInt(num % 100 / 10);
+        let one = parseInt(num % 10);
+
+        document.write("천의 자리 : " + thousand + "<br>");
+        document.write("백의 자리 : " + hundred + "<br>");
+        document.write("십의 자리 : " + ten + "<br>");
+        document.write("일의 자리 : " + one + "<br>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>16번</title>
+</head>
+<body>
+    <script>
+        let cm = prompt("센티미터(cm)를 입력하세요", "0");
+        cm = parseFloat(cm);
+
+        let totalInch = cm / 2.54;
+        let feet = parseInt(totalInch / 12);
+        let inch = totalInch % 12;
+
+        document.write(cm + "cm = " + feet + "feet " + inch.toFixed(2) + "inch");
+    </script>
+</body>
+</html>
