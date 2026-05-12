@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM 실습 2</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1 id="title">스타일 변경 예제</h1>
+    <button id="styleButton">스타일 바꾸기</button>
+    
+    <script>
+        // 1. h1 태그를 선택하세요.
+        let title = document.getElementById("title");
+        
+        // 2. button 태그를 선택하세요.
+        let button = document.getElementById("styleButton");
+        
+        // 3. 버튼 클릭 시 스타일을 바꾸세요.
+        button.onclick = function() {
+            title.style.color = "white";
+            title.style.backgroundColor = "blue";
+            title.style.padding = "10px";
+        };
+    </script>
+</body>
+</html>

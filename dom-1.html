@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM 실습 1</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1 id="title">처음 제목입니다.</h1>
+    <button id="changeButton">제목 바꾸기</button>
+    
+    <script>
+        // 1. h1 태그를 선택하세요.
+        let title = document.getElementById("title");
+        
+        // 2. button 태그를 선택하세요.
+        let button = document.getElementById("changeButton");
+        
+        // 3. 버튼 클릭 시 h1의 글자를 바꾸세요.
+        button.onclick = function() {
+            title.textContent = "JavaScript로 제목을 바꿨습니다.";
+        };
+    </script>
+</body>
+</html>

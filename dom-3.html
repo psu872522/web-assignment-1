@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM 실습 3</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>이미지 속성 변경</h1>
+    <img id="image" alt="이미지가 여기에 표시됩니다.">
+    <br><br>
+    <button id="imageButton">이미지 보이기</button>
+    
+    <script>
+        // 1. img 태그를 선택하세요.
+        let image = document.getElementById("image");
+        
+        // 2. button 태그를 선택하세요.
+        let button = document.getElementById("imageButton");
+        
+        // 3. 버튼 클릭 시 src, width, height를 변경하세요.
+        button.onclick = function() {
+            image.src = "https://placehold.co/300x200";
+            image.width = 300;
+            image.height = 200;
+        };
+    </script>
+</body>
+</html>
